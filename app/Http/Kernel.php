@@ -1,8 +1,13 @@
 <?php
-
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+
+use App\Modules\Users\Middleware\{
+    Auth,
+    LoggedIn,
+    CheckPermission
+};
 
 class Kernel extends HttpKernel
 {
@@ -37,11 +42,17 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
-
         'api' => [
             'throttle:60,1',
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            'bindings',
+            \Fruitcake\Cors\HandleCors::class,
         ],
+        'admin' => [
+            'throttle:60,1',
+            'bindings',
+            \Fruitcake\Cors\HandleCors::class,
+            Auth::class
+        ]
     ];
 
     /**
@@ -52,6 +63,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
+        'check-permission' => checkPermission::class,
+        'logged-in' => LoggedIn::class,
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,

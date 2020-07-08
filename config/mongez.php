@@ -86,8 +86,7 @@ return [
     'repositories' => [
         // add your repositories here  
         // 'repo-short-name' => RepositoryClassPath::class,
-        'cats' => App\Modules\Cats\Repositories\CatsRepository::class,
- 		 // Auto generated repositories here: DO NOT remove this line.   
+ 		// Auto generated repositories here: DO NOT remove this line.   
     ],
 
     /*
