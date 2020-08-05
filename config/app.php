@@ -178,6 +178,9 @@ return [
 		/** 
 		 * Modules Service Providers...
 		 */
+ 		App\Modules\Users\Providers\UserServiceProvider::class,
+ 		App\Modules\Settings\Providers\SettingServiceProvider::class,
+ 		
  		// Auto generated providers here: DO NOT remove this line.
 
 

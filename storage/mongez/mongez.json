@@ -2,7 +2,6 @@
     "installed": true,
     "modules": [
         "users",
-        "settings",
-        "localization"
+        "settings"
     ]
 }

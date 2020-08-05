@@ -86,7 +86,11 @@ return [
     'repositories' => [
         // add your repositories here  
         // 'repo-short-name' => RepositoryClassPath::class,
- 		// Auto generated repositories here: DO NOT remove this line.   
+ 		 'users' => App\Modules\Users\Repositories\UsersRepository::class,
+ 		 'usersGroups' => App\Modules\Users\Repositories\UsersGroupsRepository::class,
+ 		 'permissions' => App\Modules\Users\Repositories\PermissionsRepository::class,
+ 		 'settings' => App\Modules\Settings\Repositories\SettingsRepository::class,
+ 		 // Auto generated repositories here: DO NOT remove this line.   
     ],
 
     /*

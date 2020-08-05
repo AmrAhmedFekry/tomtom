@@ -5,8 +5,8 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 use App\Modules\Users\Middleware\{
     Auth,
-    LoggedIn,
-    CheckPermission
+    Authenticated,
+    Authorized
 };
 
 class Kernel extends HttpKernel
@@ -63,8 +63,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'check-permission' => checkPermission::class,
-        'logged-in' => LoggedIn::class,
+        'Authorized' => Authorized::class,
+        'Authenticated' => Authenticated::class,
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
