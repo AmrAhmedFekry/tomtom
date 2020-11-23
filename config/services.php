@@ -29,5 +29,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
+    'instagrambasic' => [    
+        'client_id' => env('INSTAGRAMBASIC_CLIENT_ID'),  
+        'client_secret' => env('INSTAGRAMBASIC_CLIENT_SECRET'),  
+        'redirect' => env('INSTAGRAMBASIC_REDIRECT_URI') 
+      ],      
 ];

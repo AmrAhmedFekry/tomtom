@@ -5,7 +5,7 @@ return [
     |--------------------------------------------------------------------------
     | Database options
     |--------------------------------------------------------------------------
-    | 
+    |
     | These are the `resource` options that can be used with any `Resource` class
     | The `assets` option defines the generating `url` for any asset, by default is `url()`
     |
@@ -20,7 +20,7 @@ return [
     |--------------------------------------------------------------------------
     | Resources options
     |--------------------------------------------------------------------------
-    | 
+    |
     | These are the `resource` options that can be used with any `Resource` class
     | The `assets` option defines the generating `url` for any asset, by default is `url()`
     |
@@ -36,9 +36,9 @@ return [
     |
     | Based on the settings that is provided here, the module builder will adjust its settings accordingly.
     | Put your configurations based on your application flow
-    | 
-    | has-admin: if set to false, then Laravel Mongez will treat the application as a single application with no admin panel 
-    | 
+    |
+    | has-admin: if set to false, then Laravel Mongez will treat the application as a single application with no admin panel
+    |
     */
     'module-builder' => [
         'has-admin' => true,
@@ -49,8 +49,8 @@ return [
     | Pagination configurations
     |--------------------------------------------------------------------------
     | Pagination configurations work with `list` method in any repository.
-    |    
-    | Any value listed below will be applied on all repositories unless repository/method-call override.   
+    |
+    | Any value listed below will be applied on all repositories unless repository/method-call override.
     */
     'pagination' => [
         'paginate' => true,
@@ -63,9 +63,9 @@ return [
     |--------------------------------------------------------------------------
     |
     | The following options are applied on any request related to the AdminApiController or the /admin requests in general
-    | 
+    |
     | returnOn options: single-record | all-records | none
-    | 
+    |
     */
     'admin' => [
         'returnOn' => [
@@ -80,17 +80,14 @@ return [
     |--------------------------------------------------------------------------
     |
     | The repositories section will be mainly used for records retrieval... fetching records from database
-    | It will also be responsible for inserting/updating and deleting from database 
+    | It will also be responsible for inserting/updating and deleting from database
     |
     */
     'repositories' => [
-        // add your repositories here  
+        // add your repositories here
         // 'repo-short-name' => RepositoryClassPath::class,
- 		 'users' => App\Modules\Users\Repositories\UsersRepository::class,
- 		 'usersGroups' => App\Modules\Users\Repositories\UsersGroupsRepository::class,
- 		 'permissions' => App\Modules\Users\Repositories\PermissionsRepository::class,
- 		 'settings' => App\Modules\Settings\Repositories\SettingsRepository::class,
- 		 // Auto generated repositories here: DO NOT remove this line.   
+ 		 'cats' => App\Modules\Cats\Repositories\CatsRepository::class,
+ 		 // Auto generated repositories here: DO NOT remove this line.
     ],
 
     /*
@@ -98,9 +95,9 @@ return [
     | Macroable classes
     |--------------------------------------------------------------------------
     |
-    | Here you can set your macros classes that will be used to be 
-    | The key will be the original class name that will be extends 
-    | The value will be the macro class that will be used to extend the original class 
+    | Here you can set your macros classes that will be used to be
+    | The key will be the original class name that will be extends
+    | The value will be the macro class that will be used to extend the original class
     |
     */
     'macros' => [
@@ -118,17 +115,17 @@ return [
     | Events list
     |--------------------------------------------------------------------------
     |
-    | Set list of events listeners that will be triggered later from its sources 
+    | Set list of events listeners that will be triggered later from its sources
     |
     */
     'events' => [],
-    
+
     /*
     |--------------------------------------------------------------------------
     | Cache driver
     |--------------------------------------------------------------------------
     |
-    | Set your cache driver one of available drivers in laravel   
+    | Set your cache driver one of available drivers in laravel
     |
     */
     'cache' => [],

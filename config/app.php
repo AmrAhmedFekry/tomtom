@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -175,15 +176,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-		/** 
+		/**
 		 * Modules Service Providers...
 		 */
- 		App\Modules\Users\Providers\UserServiceProvider::class,
- 		App\Modules\Settings\Providers\SettingServiceProvider::class,
- 		
+ 		App\Modules\Cats\Providers\CatServiceProvider::class,
  		// Auto generated providers here: DO NOT remove this line.
-
-
     ],
 
     /*
@@ -234,7 +231,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Image' => Intervention\Image\Facades\Image::class
     ],
 
 ];

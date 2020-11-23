@@ -12,6 +12,7 @@
         "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "hassanzohdy/mongez": "^1.5",
+        "intervention/image": "^2.5",
         "jenssegers/mongodb": "^3.6",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0"
