@@ -179,7 +179,8 @@ return [
 		/**
 		 * Modules Service Providers...
 		 */
- 		App\Modules\Cats\Providers\CatServiceProvider::class,
+        App\Modules\Users\Providers\UserServiceProvider::class,
+ 		App\Modules\Buyers\Providers\BuyerServiceProvider::class,
  		// Auto generated providers here: DO NOT remove this line.
     ],
 

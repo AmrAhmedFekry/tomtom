@@ -1,0 +1,16 @@
+{
+    "host": "crafted-internet.com",
+    "username": "tomtom@crafted-internet.com",
+    "password": "mc;Ez#MvMO4&",
+    "remotePath": "",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": true,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

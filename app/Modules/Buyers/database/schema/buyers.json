@@ -1,0 +1,16 @@
+{
+    "_id": "objectId",
+    "id": "int",
+    "createdAt": "dataTime",
+    "updatedAt": "dataTime",
+    "deletedAt": "dataTime",
+    "deletedBy": "@Users\/users",
+    "createdBy": "@Users\/users",
+    "updatedBy": "@Users\/users",
+    "firstName": "string",
+    "lastName": "string",
+    "email": "string",
+    "password": "string",
+    "mobile": "string",
+    "mobileIsVerified": "boolean"
+}

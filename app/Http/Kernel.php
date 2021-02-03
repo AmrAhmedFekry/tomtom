@@ -1,6 +1,10 @@
 <?php
 namespace App\Http;
 
+use App\Http\BloodyCors;
+
+use App\Modules\Buyers\Middleware\LoggedIn as BuyerLogin;
+use App\Modules\Buyers\Middleware\Auth as BuyerAuth;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 use App\Modules\Users\Middleware\{
@@ -52,7 +56,12 @@ class Kernel extends HttpKernel
             'bindings',
             \Fruitcake\Cors\HandleCors::class,
             Auth::class
-        ]
+        ],
+        'buyer' => [
+            'throttle:60,1',
+            'bindings',
+            BuyerAuth::class
+        ],
     ];
 
     /**
@@ -63,6 +72,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
+        'buyer-logged-in' => BuyerLogin::class,
+        'BuyerAuth' => BuyerAuth::class,
         'Authorized' => Authorized::class,
         'Authenticated' => Authenticated::class,
         'auth' => \App\Http\Middleware\Authenticate::class,

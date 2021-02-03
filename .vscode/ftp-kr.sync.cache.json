@@ -1,0 +1,100 @@
+{
+  "ftp://crafted-internet.com:21@tomtom@crafted-internet.com": {
+    ".editorconfig": {
+      "type": "-",
+      "size": 220,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".env": {
+      "type": "-",
+      "size": 878,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".env.example": {
+      "type": "-",
+      "size": 767,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".git": {},
+    ".gitattributes": {
+      "type": "-",
+      "size": 111,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".gitignore": {
+      "type": "-",
+      "size": 163,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".styleci.yml": {
+      "type": "-",
+      "size": 174,
+      "lmtime": 0,
+      "modified": false
+    },
+    "README.md": {
+      "type": "-",
+      "size": 4455,
+      "lmtime": 0,
+      "modified": false
+    },
+    "app": {},
+    "artisan": {
+      "type": "-",
+      "size": 1686,
+      "lmtime": 0,
+      "modified": false
+    },
+    "bootstrap": {},
+    "composer.json": {
+      "type": "-",
+      "size": 1695,
+      "lmtime": 0,
+      "modified": false
+    },
+    "composer.lock": {
+      "type": "-",
+      "size": 258137,
+      "lmtime": 0,
+      "modified": false
+    },
+    "config": {},
+    "database": {},
+    "package.json": {
+      "type": "-",
+      "size": 1013,
+      "lmtime": 0,
+      "modified": false
+    },
+    "phpunit.xml": {
+      "type": "-",
+      "size": 1140,
+      "lmtime": 0,
+      "modified": false
+    },
+    "public": {},
+    "resources": {},
+    "routes": {},
+    "server.php": {
+      "type": "-",
+      "size": 563,
+      "lmtime": 0,
+      "modified": false
+    },
+    "storage": {},
+    "tests": {},
+    "vendor": {},
+    "webpack.mix.js": {
+      "type": "-",
+      "size": 538,
+      "lmtime": 0,
+      "modified": false
+    }
+  },
+  "$version": 1
+}

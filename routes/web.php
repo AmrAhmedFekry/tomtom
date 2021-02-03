@@ -11,3 +11,18 @@
 |
 */
 
+Route::get('/run', function() {
+    $client = new CybsSoapClient();
+    $request = $client->createRequest('trippickup_egp');
+
+    $card = new stdClass();
+    $card->accountNumber = '4111111111111111';
+    $card->expirationMonth = '12';
+    $card->expirationYear = '2020';
+    $request->card = $card;
+
+    // Populate $request here with other necessary properties
+
+    $reply = $client->runTransaction($request);
+    dd($reply);
+});
