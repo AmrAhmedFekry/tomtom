@@ -9,8 +9,6 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "a17mad/laravel-cybersource": "^1.2",
-        "cybersource/sdk-php": "*",
         "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "hassanzohdy/mongez": "^1.5",
